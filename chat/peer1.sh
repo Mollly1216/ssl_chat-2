@@ -1,0 +1,1 @@
+./ssl_chat -port 8443 -cert peer1.crt -key peer1.key -ca ca.crt
