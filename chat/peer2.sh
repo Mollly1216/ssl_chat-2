@@ -1,1 +1,1 @@
-./ssl_chat -port 8444 -peer 127.0.0.1:8443 -cert peer2.crt -key peer2.key -ca ca.crt
+./ssl_chat -port 8444 -peer 127.0.0.1:8443 -cert peer2.crt -key peer2.key -ca ca.crt -history peer2.log -password peer2-passwd

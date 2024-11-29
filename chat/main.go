@@ -146,7 +146,7 @@ func handleConnection(conn net.Conn) {
 			return
 		}
 		// 加密并保存聊天记录
-		saveChatLog(*serverPort+"(我）："+text, *chatLog, *password)
+		saveChatLog("我："+text, *chatLog, *password)
 	}
 }
 
@@ -163,7 +163,7 @@ func readMessages(conn net.Conn) {
 		message := string(buf[:n])
 		fmt.Printf("对方：%s", message)
 		// 加密并保存聊天记录
-		saveChatLog(*peerAddr+"（对方）："+message, *chatLog, *password)
+		saveChatLog("对方："+message, *chatLog, *password)
 	}
 }
 
