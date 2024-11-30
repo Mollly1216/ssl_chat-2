@@ -1,0 +1,1 @@
+history/history -password peer1-password -history ./history/peer1.log
